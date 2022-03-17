@@ -54,6 +54,7 @@ body {
   border-radius: 0.8rem;
 }
 .storageInfo {
+  text-align: left;
   color: hsl(243, 100%, 93%);
 }
 .data {
