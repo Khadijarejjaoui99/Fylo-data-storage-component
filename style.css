@@ -120,7 +120,6 @@ body {
   position: relative;
   top: -0.5rem;
   font-size: 0.9rem;
-  font-weight: 400;
   text-transform: uppercase;
   color: hsl(229, 7%, 55%);
 }
@@ -145,8 +144,8 @@ body {
   }
   .tringle {
     position: absolute;
-    left: 8.8rem;
-    top: 4.3rem;
+    left: 9.7rem;
+    top: 4.95rem;
     width: 0;
     height: 0;
     border-top: 10px solid rgb(255, 255, 255);
@@ -157,6 +156,9 @@ body {
   .ball {
     left: 98%;
   }
+}
+.storageInfoBox > h1 {
+  font-size: 2.5rem;
 }
 @media (min-width: 1440px) {
   body {
