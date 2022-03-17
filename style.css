@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: hsl(229, 57%, 11%) url(images/bg-mobile.png) no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.logoIconsContainer {
+  min-width: 22.5rem;
+  padding: 3rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.7rem;
+  border-top-right-radius: 7rem;
+}
+.logoIconsContainer > img {
+  max-width: 100%;
+  width: 8.57rem;
+}
+.iconsContainer {
+  display: flex;
+  margin-top: 1.6rem;
+}
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  width: 2.857rem;
+  height: 2.857rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.storageInfoContainer {
+  position: relative;
+  min-width: 22.5rem;
+  background-color: hsl(228, 56%, 26%);
+  margin-top: 1rem;
+  padding: 2rem 2rem 3rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+.storageInfo {
+  color: hsl(243, 100%, 93%);
+}
+.data {
+  font-weight: 700;
+}
+.progressBar {
+  width: 100%;
+  height: 1.3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  align-items: center;
+}
+.progressColor {
+  position: relative;
+  width: 81.5%;
+  height: 1rem;
+  border-radius: 1rem;
+  margin-left: 0.2rem;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.ball {
+  position: absolute;
+  left: 96.7%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.values {
+  margin-top: 0.7rem;
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+}
+.value1 {
+  float: left;
+}
+.value2 {
+  float: right;
+}
+.values::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.storageInfoBox {
+  position: absolute;
+  left: 50%;
+  top: 10.71rem;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.storageInfoBox > h1 {
+  font-size: 2rem;
+}
+.storageInfoBox > h1 > span {
+  position: relative;
+  top: -0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+}
+/*Media query*/
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+  }
+  .storageInfoContainer {
+    margin-left: 1.7rem;
+    min-width: 38.5rem;
+    max-width: 40rem;
+    padding: 4rem 3.5rem;
+  }
+
+  .storageInfoBox {
+    left: 24.5rem;
+    top: -2.5rem;
+    transform: translate(0, 0);
+
+    border-bottom-right-radius: 0;
+  }
+  .tringle {
+    position: absolute;
+    left: 8.8rem;
+    top: 4.3rem;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+  .ball {
+    left: 98%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background: hsl(229, 57%, 11%) url(images/bg-desktop.png) no-repeat fixed;
+    background-position: left 0 bottom -60px;
+    background-size: contain;
+  }
+}
